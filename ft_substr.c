@@ -17,7 +17,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*tab;
 	int		i;
 
-	if (!s || start >= ft_strlen(s))
+	if (!s)
 		return (NULL);
 	tab = (char*)malloc(sizeof(char) * len + 1);
 	if (!tab)
